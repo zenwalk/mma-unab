@@ -1,0 +1,143 @@
+/3.1
+(ODB.1
+	FirstRootClassName:	"MSrc"
+	Roots:	2
+	Version:	31
+)
+
+(MSrc.2
+	MTab:	3
+	MKeyZone:	"ZN"
+	MaxScore:	0xb72
+	IntMaxScore:	0xe7a
+	IntDelimit:	" & "
+	DefOffset:	-1.00000000000000
+)
+
+(MTab.3
+	Name:	"US Single Range with Zone"
+	IndexFlag:	"1028657148"
+	RecordLength:	82
+	IntRecLen:	84
+	MFieldList:	4
+	MFieldList:	5
+	MFieldList:	6
+	MFieldList:	7
+	MIndexList:	8
+	MIndexList:	9
+	MIndexList:	10
+	MQueryList:	11
+	MQueryList:	12
+	MQueryList:	13
+	StanRules:	"us_addr.stn"
+	MatchRules:	"us_srng1.mat"
+	IntFieldList:	14
+	IntFieldList:	15
+	IntIndexList:	8
+	IntQueryList:	16
+	IntQueryList:	17
+	IntStanRules:	"us_intsc.stn"
+	IntMatchRules:	"us_intsc.mat"
+)
+
+(MField.4
+	FieldName:	"From"
+	StartPos:	1
+	Width:	10
+	Required:	1
+	Justification:	2
+	VTabFieldName:	"Inicio"
+)
+
+(MField.5
+	FieldName:	"To"
+	StartPos:	11
+	Width:	10
+	Required:	1
+	Justification:	2
+	VTabFieldName:	"Termino"
+)
+
+(MField.6
+	FieldName:	"StreetName"
+	StartPos:	27
+	Width:	28
+	Required:	1
+	Justification:	1
+	VTabFieldName:	"Nombre"
+)
+
+(MField.7
+	FieldName:	"Zone"
+	StartPos:	63
+	Width:	20
+	Required:	1
+	Justification:	1
+	VTabFieldName:	"Comu"
+)
+
+(MIndex.8
+	IndexName:	"I1"
+	IndexType:	7
+	MatchFields:	6
+)
+
+(MIndex.9
+	IndexName:	"I2"
+	IndexType:	6
+	MatchFields:	4
+	MatchFields:	5
+)
+
+(MIndex.10
+	IndexName:	"I3"
+	IndexType:	2
+	MatchFields:	7
+)
+
+(MQuery.11
+	Query:	"I1 = \"%SN%\"?"
+	FieldName:	"SN"
+	Status:	1
+)
+
+(MQuery.12
+	Query:	"I2 = %HN%"
+	FieldName:	"HN"
+	Status:	1
+)
+
+(MQuery.13
+	Query:	"I3 = \"%ZN%\"?"
+	FieldName:	"ZN"
+	Status:	1
+)
+
+(MField.14
+	FieldName:	"StreetName1"
+	StartPos:	7
+	Width:	28
+	Justification:	1
+	VTabFieldName:	"Nombre"
+)
+
+(MField.15
+	FieldName:	"StreetName2"
+	StartPos:	49
+	Width:	28
+	Justification:	1
+	VTabFieldName:	"Nombre"
+)
+
+(MQuery.16
+	Query:	"I1 = \"%S1%\"?"
+	FieldName:	"S1"
+	Status:	1
+)
+
+(MQuery.17
+	Query:	"I1 = \"%S2%\"?"
+	FieldName:	"S2"
+	Status:	1
+)
+
