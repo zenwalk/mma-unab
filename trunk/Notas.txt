@@ -1,0 +1,5 @@
+﻿Bitacora identificando:
+Horas 
+RAzon de falla
+solución.
+Parámetros de prueba.
